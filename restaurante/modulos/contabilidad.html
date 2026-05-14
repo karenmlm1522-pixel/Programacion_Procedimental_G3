@@ -1,144 +1,116 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">   
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="../css/contabilidad.css" />
     <title>Document</title>
-    <style>
-
-.main-wrapper {
-    padding: 40px;
-}
-
-.outline-rect {
-    border: 2px solid #4a4a4a;
-    padding: 1.5rem;
-     margin-bottom: 2rem;
-}
-
-.header-flat {
-   background-color: #000000;
- }
-        
- .profile-circle-flat {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 2px solid #4a4a4a;
-    margin: 0 auto 20px auto;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-        
-.profile-circle-flat img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-        
-.name-rect-flat {
-    border: 2px solid #4a4a4a;
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
-    background-color: #ffffff;
-    color: #000000;
-}
-        
-.inner-content-rect {
-    border: 2px solid #4a4a4a;
-    padding: 2rem;
-    height: 100%;
-}
-
-    </style>
-</head>
-
-<body>
+  </head>
+  <body>
     <div class="main-wrapper">
-        
-        <div class="outline-rect header-flat">
-            <h1 class="title is-3 has-text-centered is-marginless">CONTABILIDAD</h1>
-        </div>
+      <div class="outline-rect header-flat">
+        <h1 class="title is-3 has-text-centered is-marginless">CONTABILIDAD</h1>
+      </div>
 
-        <div class="outline-rect">
-            <div class="columns">
-                
-                <div class="column is-4">
-                    <div class="p-4">
-                        <div class="profile-circle-flat">
-                            <img src="https://www.viraliking.com/wp-content/uploads/2022/06/9-de-las-mejores-razas-de-perros-familiares.jpg" alt="Avatar">
-                        </div>
-                        <div class="name-rect-flat">
-                            USUARIO
-                        </div>
-                    </div>
-                </div>
-
-                <div class="column is-8">
-                    <div class="p-4">
-                        <div class="inner-content-rect">
-                            <div class="columns is-multiline">
-                                <div class="column is-6">
-                                    <div class="field">
-                                        <label class="label">Ventas</label>
-                                        <div class="control">
-                                            <input class="input" type="text" placeholder="Ingresa ventas...">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="column is-6">
-                                    <div class="field">
-                                        <label class="label">Fecha</label>
-                                        <div class="control">
-                                            <input class="input" type="date">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="column is-6">
-                                    <div class="field">
-                                        <label class="label">Ingresos</label>
-                                        <div class="control">
-                                            <input class="input" type="number" placeholder="0.00">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="column is-6">
-                                    <div class="field">
-                                        <label class="label">Egresos</label>
-                                        <div class="control">
-                                            <input class="input" type="number" placeholder="0.00">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="column is-12">
-                                    <div class="field">
-                                        <label class="label">Concepto</label>
-                                        <div class="control">
-                                            <input class="input" type="text" placeholder="Escribe el concepto aquí">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="column is-12">
-                                    <div class="field">
-                                        <label class="label">Valor</label>
-                                        <div class="control">
-                                            <input class="input is-link" type="number" placeholder="Valor final">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+      <div class="outline-rect">
+        <div class="columns is-marginless">
+          <div class="column is-4 has-border-right">
+            <div class="p-5">
+              <div class="profile-circle-flat">
+                <img
+                  src="https://tse3.mm.bing.net/th/id/OIP.Vrn5_WEpXcZG8sqFQ5k3mgHaHa?r=0&pid=ImgDet&w=182&h=182&c=7&o=7&rm=3"
+                  alt="Avatar"
+                />
+              </div>
+              <div class="name-rect-flat">USUARIO</div>
             </div>
-        </div>
+          </div>
 
+          <div class="column is-8">
+            <div class="p-5">
+              <div class="inner-content-rect">
+                <div class="columns is-multiline">
+                  <div class="column is-6">
+                    <div class="field">
+                      <label class="label">Ventas</label>
+                      <div class="control">
+                        <input
+                          class="input"
+                          type="text"
+                          placeholder="Ingresa ventas..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column is-6">
+                    <div class="field">
+                      <label class="label">Fecha</label>
+                      <div class="control">
+                        <input class="input" type="date" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column is-6">
+                    <div class="field">
+                      <label class="label">Ingresos</label>
+                      <div class="control has-icons-left">
+                        <input class="input" type="number" placeholder="0.00" />
+                        <span class="icon is-small is-left"
+                          ><i class="fas fa-dollar-sign"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column is-6">
+                    <div class="field">
+                      <label class="label">Egresos</label>
+                      <div class="control has-icons-left">
+                        <input class="input" type="number" placeholder="0.00" />
+                        <span class="icon is-small is-left"
+                          ><i class="fas fa-minus-circle"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column is-12">
+                    <div class="field">
+                      <label class="label">Concepto</label>
+                      <div class="control">
+                        <input
+                          class="input"
+                          type="text"
+                          placeholder="Escribe el concepto aquí"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column is-12">
+                    <button class="button is-dark is-fullwidth">
+                      GUARDAR REGISTRO
+                    </button>
+                  </div>
+                  <a href="http://127.0.0.1:5500/restaurante/index.html">
+                    <div class="column is-12">
+                      <button class="button is-dark is-fullwidth">
+                        VOLVER A PAGINA DE INICIO
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
