@@ -1,0 +1,74 @@
+:root {
+    --cafe-oscuro: #3E2723;
+    --cafe-medio: #5D4037;
+    --cafe-acento: #8D6E63; 
+    --crema-suave: #F5F2E9;
+    --crema-tarjeta: #FFFFFF;
+    --texto-suave: #795548;
+}
+
+.has-text-primary,
+.button.is-light .fab, 
+.button.is-light .fas {
+    color: var(--cafe-acento) !important;
+}
+
+.button.is-primary {
+    background-color: var(--cafe-medio) !important;
+    color: #ffffff !important;
+    transition: background-color 0.3s ease;
+}
+
+.button.is-primary:hover {
+    background-color: var(--cafe-oscuro) !important;
+}
+
+.tag.is-primary.is-light {
+    background-color: #EFEBE9 !important;
+    color: var(--cafe-medio) !important;
+}
+
+.has-background-light {
+    background-color: var(--crema-suave) !important;
+}
+
+.card {
+    background-color: var(--crema-tarjeta) !important;
+    border: 1px solid #E0DCD3;
+    box-shadow: 0 4px 15px rgba(62, 39, 35, 0.05) !important;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card .title {
+    color: var(--cafe-oscuro) !important;
+}
+
+.card .subtitle.has-text-primary {
+    color: var(--cafe-acento) !important;
+}
+
+.title {
+    color: var(--cafe-oscuro) !important;
+    font-weight: 700;
+}
+
+.subtitle.has-text-grey,
+.content.has-text-grey {
+    color: var(--texto-suave) !important;
+}
+
+.has-background-dark,
+.hero.is-dark {
+    background-color: var(--cafe-oscuro) !important;
+}
+
+.navbar-divider {
+    background-color: #E0DCD3 !important;
+}
+
+.image-cover {
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
