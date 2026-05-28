@@ -1,0 +1,110 @@
+body {
+    background-color: #fdfaf5;
+    color: #3c2a21;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section {
+    padding-top: 3rem;
+}
+
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(60, 42, 33, 0.1);
+    border: 1px solid #e0d7c6;
+}
+
+.card-header.has-background-primary {
+    background-color: #6f4e37 !important;
+}
+
+.card-header-title {
+    color: #f5f5dc !important;
+    font-size: 1.25rem;
+    justify-content: center;
+}
+
+.card-content {
+    background-color: #ffffff;
+    padding: 2rem;
+}
+
+.label {
+    color: #6f4e37 !important;
+    font-weight: 600;
+}
+
+
+.input, .select select {
+    border-color: #d2b48c !important;
+    background-color: #fffaf0 !important;
+    color: #3c2a21 !important;
+}
+
+.input:focus, .select select:focus {
+    border-color: #6f4e37 !important;
+    box-shadow: 0 0 0 0.125em rgba(111, 78, 55, 0.25) !important;
+}
+
+.icon.is-left i {
+    color: #8b4513 !important;
+}
+
+.radio {
+    color: #5a4033;
+    padding: 0.5rem;
+    transition: background-color 0.2s;
+    border-radius: 4px;
+}
+
+.radio:hover {
+    background-color: #f5f5dc;
+}
+
+.radio input[type="radio"] {
+    accent-color: #6f4e37;
+}
+
+.button.is-primary {
+    background-color: #6f4e37 !important;
+    color: #f5f5dc !important;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button.is-primary:hover {
+    background-color: #3c2a21 !important;
+}
+
+.button.is-light {
+    background-color: #f5f5dc !important;
+    color: #6f4e37 !important;
+    border: 1px solid #d2b48c;
+}
+
+.button.is-light:hover {
+    background-color: #e0d7c6 !important;
+}
+
+.button.is-dark {
+    background-color: #3c2a21 !important;
+    color: #f5f5dc !important;
+    margin-top: 1rem;
+}
+
+.button.is-dark:hover {
+    background-color: #1a120e !important;
+}
+
+.column.is-eight {
+    flex: none;
+    width: 66.66%;
+}
+
+@media screen and (max-width: 768px) {
+    .card-content {
+        padding: 1.25rem;
+    }
+}
