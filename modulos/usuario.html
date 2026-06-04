@@ -40,7 +40,7 @@
         <label class="label">Tipo de documento</label>
         <div class="control">
           <div class="select is-fullwidth">
-            <select>
+            <select id="tipo_documento" required>
               <option>Seleccione tipo</option>
               <option>Cédula de Ciudadanía</option>
               <option>Tarjeta de Identidad</option>
@@ -96,15 +96,13 @@
       <div class="field">
         <label class="label">Género</label>
         <div class="control">
-          <label class="radio">
-            <input type="radio" name="genero" /> Masculino
-          </label>
-          <label class="radio">
-            <input type="radio" name="genero" /> Femenino
-          </label>
-          <label class="radio">
-            <input type="radio" name="genero" /> Otro
-          </label>
+          <div class="select is-fullwidth">
+            <select id="genero" required>
+              <option value="">Selecciona una opción</option>
+              <option>Masculino</option>
+              <option>Femenino</option>
+            </select>
+          </div>
         </div>
       </div>
 
@@ -123,7 +121,7 @@
       <div class="field">
         <label class="label">Fecha de nacimiento</label>
         <div class="control">
-          <input class="input" type="date" />
+          <input class="input" type="date" id="fecha_nacimiento" />
         </div>
       </div>
 
