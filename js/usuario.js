@@ -1,3 +1,4 @@
+console.log("hola mundo");
 let nombre = document.getElementById("nombre").value;
 let apellido = document.getElementById("apellido").value;
 let tipo_documento = document.getElementById("tipo_documento").value;
@@ -23,7 +24,7 @@ else {
     }    
 
     if (telefono.length < 10) {
-        console.log ("Los datos no son validos")
+        console.log ("Los datos non validos")
     }
 
     if (email != /[@]/) {
