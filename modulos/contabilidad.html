@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="../css/contabilidad.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="outline-rect header-flat">
+        <h1 class="title is-3 has-text-centered is-marginless">CONTABILIDAD</h1>
+      </div>
+
+      <div class="outline-rect">
+        <div class="columns is-marginless">
+          <div class="column is-4 has-border-right">
+            <div class="p-5">
+              <div class="profile-circle-flat">
+                <img
+                  src="https://tse3.mm.bing.net/th/id/OIP.Vrn5_WEpXcZG8sqFQ5k3mgHaHa?r=0&pid=ImgDet&w=182&h=182&c=7&o=7&rm=3"
+                  alt="Avatar"
+                />
+              </div>
+              <div class="name-rect-flat">USUARIO</div>
+            </div>
+          </div>
+
+          <div class="column is-8">
+            <div class="p-5">
+              <div class="inner-content-rect">
+                <div class="columns is-multiline">
+                  <div class="column is-6">
+                    <div class="field">
+                      <label class="label">Ventas</label>
+                      <div class="control">
+                        <input
+                          class="input"
+                          type="text"
+                          placeholder="Ingresa ventas..."
+                          id="ventas"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column is-6">
+                    <div class="field">
+                      <label class="label">Fecha</label>
+                      <div class="control">
+                        <input class="input" type="date" id="fecha" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column is-6">
+                    <div class="field">
+                      <label class="label">Ingresos</label>
+                      <div class="control has-icons-left">
+                        <input
+                          class="input"
+                          type="number"
+                          placeholder="0.00"
+                          id="ingresos"
+                        />
+                        <span class="icon is-small is-left"
+                          ><i class="fas fa-dollar-sign"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column is-6">
+                    <div class="field">
+                      <label class="label">Egresos</label>
+                      <div class="control has-icons-left">
+                        <input
+                          class="input"
+                          type="number"
+                          placeholder="0.00"
+                          id="egresos"
+                        />
+                        <span class="icon is-small is-left"
+                          ><i class="fas fa-minus-circle"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column is-12">
+                    <div class="field">
+                      <label class="label">Concepto</label>
+                      <div class="control">
+                        <input
+                          class="input"
+                          type="text"
+                          placeholder="Escribe el concepto aquí"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column is-12">
+                    <div class="field">
+                      <label class="label"> Valor Total</label>
+                      <div class="control has-icons-left">
+                        <input
+                          class="input is-primary is-medium"
+                          type="number"
+                          placeholder="0.0"
+                          id="valor_total"
+                        />
+                        <span class="icon is-small is is-left"
+                          ><i class="fas fa-dollar-sign"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column is-12">
+                    <button class="button is-dark is-fullwidth">Enviar</button>
+                  </div>
+                  <a href="../index.html">
+                    <div class="column is-12">
+                      <button class="button is-dark is-fullwidth">
+                        VOLVER A PAGINA DE INICIO
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/contabilidad.js"></script>
+  </body>
+</html>

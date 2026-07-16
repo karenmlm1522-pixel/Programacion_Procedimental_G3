@@ -1,0 +1,73 @@
+body {
+    background-color: #fdfaf5;
+    color: #3c2a21;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2rem;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e0d7c6;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(111, 78, 55, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(60, 42, 33, 0.15);
+    border-color: #6f4e37;
+}
+
+.card .image img {
+    border-radius: 8px;
+    border: 3px solid #f5f5dc;
+    object-fit: cover;
+}
+
+.title.is-4 {
+    color: #6f4e37 !important;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle.is-6 {
+    color: #5a4033 !important;
+    line-height: 1.4;
+}
+
+.columns {
+    margin-bottom: 1.5rem !important;
+}
+
+.button.is-dark {
+    background-color: #3c2a21 !important;
+    color: #f5f5dc !important;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+    height: 3.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.button.is-dark:hover {
+    background-color: #6f4e37 !important;
+    color: #ffffff !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+    .card-content {
+        padding: 1rem;
+    }
+}
