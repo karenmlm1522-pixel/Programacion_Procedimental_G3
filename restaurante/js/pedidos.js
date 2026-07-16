@@ -7,10 +7,10 @@ let direccion = document.getElementById("direccion").value;
 let metodoPago = document.getElementById("metodoPago").value;
 
   if (
-    cantidad === "" || nombre_usuario === "" || producto === "" || telefono === "" || direccion === "" || metodoPago === "" 
+    cantidad == "" || nombre_usuario == "" || producto == "" || telefono == "" || direccion == "" || metodoPago == "" 
   ) {
     console.log("Los campos están vacíos");
   }
 }
-let btnGuardar = document.getElementById("btnGuardar").value;
-document.getElementById("btnGuardar").onclick = validarFormulario;
+
+document.getElementById("Guardar").onclick = validarFormulario;

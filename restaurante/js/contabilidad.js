@@ -1,60 +1,62 @@
 function validarFormulario() {
-let Ventas = document.getElementById("Ventas").value;
-let Fecha = document.getElementById("Fecha").value;
-let Ingresos = document.getElementById("Ingresos").value;
-let Egresos = document.getElementById("Egresos").value;
-let Concepto = document.getElementById("Concepto").value;
+let ventas = document.getElementById("ventas").value;
+let fecha = document.getElementById("fecha").value;
+let ingresos = document.getElementById("ingresos").value;
+let egresos = document.getElementById("egresos").value;
+let concepto = document.getElementById("concepto").value;
 
   if (
-    ventas === "" || fecha === "" || ingresos === "" || egresos === "" || Concepto === ""
+    ventas == "" || fecha == "" || ingresos == "" || egresos == "" || Concepto == ""
   ) {
     console.log("Los campos están vacíos");
+         Swal.fire({
+  title: "esta categoria debe tener números",
+  icon: "error"
+
+});
+return;
   } else {
-    if (ventas != /[0-9]/) {
+    if (!/[0-9]/.test(ventas)) {
       console.log("esta categoria debe tener números")
       Swal.fire({
   title: "esta categoria debe tener números",
-  icon: "error",
-  showConfirmButton: false,
-  timer: 1500
+  icon: "error"
 });
 return;
     }
 
-    if (ingresos != /[0-9]/) {
+    if (!/[0-9]/.test(ingresos)) {
        console.log("esta categoria debe tener números")
       Swal.fire({
   title: "esta categoria debe tener números",
-  icon: "error",
-  showConfirmButton: false,
-  timer: 1500
+  icon: "error"
 });
 return;
     }
 
-    if (egresos != /[0-9]/) {
+    if (!/[0-9]/.test(egresos) ) {
        console.log("esta categoria debe tener números")
       Swal.fire({
   title: "esta categoria debe tener números",
-  icon: "error",
-  showConfirmButton: false,
-  timer: 1500
+  icon: "error"
 });
 return;
     }
 
-    if (valor_total != /[0-9]/) {
+    if (!/[0-9]/.test(valor_total)) {
        console.log("esta categoria debe tener números")
       Swal.fire({
   title: "esta categoria debe tener números",
-  icon: "error",
-  showConfirmButton: false,
-  timer: 1500
+  icon: "error"
 });
 return;
     }
+     Swal.fire({
+  title: "Guardado con exito",
+  icon: "success"
+  
+});
   }
 }
 
-let Guardar = document.getElementById("Guardar").value;
 document.getElementById("Guardar").onclick = validarFormulario;

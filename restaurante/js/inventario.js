@@ -4,29 +4,51 @@ let nombre_producto = document.getElementById("nombre_producto").value;
 let cantidad_producto = document.getElementById("cantidad_producto").value;
 let marca_producto = document.getElementById("marca_producto").value;
   if (
-    codigo_producto === "" || nombre_producto === "" || cantidad_producto === "" || marca_producto === ""
+    codigo_producto == "" || nombre_producto == "" || cantidad_producto == "" || marca_producto == ""
   ) { 
       console.log("Los campos están vacíos");
   } else {
-    if (codigo_producto != /[0-9]/) {
-      console.log("Los datos no son validos");
+    if (!/[0-9]/ .test(codigo_producto)) {
+      console.log("esta categoria debe tener números")
+      Swal.fire({
+  title: "esta categoria debe tener números",
+  icon: "error"
+});
+return;
     }
 
-    if (nombre_producto != /[a-zA-Z]/) {
-      console.log("Los datos no son validos");
+    if (!/[a-zA-Z]/ .test(nombre_producto)) {
+      console.log("esta categoria debe tener letras")
+      Swal.fire({
+  title: "esta categoria debe tener letras",
+  icon: "error"
+});
+return;
     }
 
-    if (cantidad_producto != /[0-9]/) {
-      console.log("Los datos no son validos");
+    if (!/[0-9]/.test(cantidad_producto)) {
+      console.log("esta categoria debe tener números")
+      Swal.fire({
+  title: "esta categoria debe tener números",
+  icon: "error"
+});
+return;
     }
 
-    if (marca_producto != /[a-zA-Z]/) {
-      console.log("Los datos no son validos");
+    if (!/[0-9]/.test(marca_producto)) {
+      console.log("esta categoria debe tener letras")
+      Swal.fire({
+  title: "esta categoria debe tener letras",
+  icon: "error"
+});
+return;
     }
-
-
+     Swal.fire({
+  title: "Guardado con exito",
+  icon: "success"
+  
+});
   }
 }
 
-let btnGuardar = document.getElementById("btnGuardar").value;
-document.getElementById("btnGuardar").onclick = validarFormulario;
+document.getElementById("Guardar").onclick = validarFormulario;
