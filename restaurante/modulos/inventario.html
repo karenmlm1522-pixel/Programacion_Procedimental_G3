@@ -1,61 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="../css/inventario.css" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" />
-  <link rel="stylesheet" href="../css/inventario.css">
-  <title>Document</title>
-  
-</head>
-<body>
-  
-  <div class="field">
-   <center><h1>FORMULARIO</h1></center>  
-
-   
-    <label class="label"> Codigo del producto
-      <div class="control">
-        <input class="input" type="text" placeholder="Ingresa codigo">
+  <body>
+    <div class="card form-card">
+      <div class="form-header">
+        <h1>INVENTARIO</h1>
       </div>
 
+      <div class="card-content">
+        <div class="field">
+          <label class="label" for="codigo">Código del Producto</label>
+          <input
+            class="input"
+            type="text"
+            id="codigo"
+            name="codigo"
+            placeholder="Ingresa codigo"
+            required
+          />
+          <span class="icon is-small is-left">
+            <i class="fas fa-barcode"></i>
+          </span>
+        </div>
 
-      <div class="field">
-        <label class="label">Nombre del producto</label>
-        <div class="control">
-          <input class="input" type="text" placeholder="Ingresa nombre">
+        <div class="field">
+          <label class="label" for="nombre">Nombre del producto</label>
+          <input
+            class="input"
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Ingresa nombre"
+            required
+          />
+          <span class="icon is-small is-left">
+            <i class="fas fa-box"></i>
+          </span>
+        </div>
+
+        <div class="field">
+          <label class="label" for="cantidad">Cantidad de productos</label>
+          <input
+            class="input"
+            type="number"
+            id="cantidad"
+            name="cantidad"
+            placeholder="Ingrese la cantidad"
+            min="1"
+            required
+          />
+          <span class="icon is-small is-left">
+            <i class="fas fa-layer-group"></i>
+          </span>
+        </div>
+
+        <div class="field">
+          <label class="label" for="marca">Marca del producto</label>
+          <input
+            class="input"
+            type="text"
+            id="marca"
+            name="marca"
+            placeholder="Ingrese marca"
+            required
+          />
+          <span class="icon is-small is-left">
+            <i class="fas fa-tag"></i>
+          </span>
+        </div>
+
+        <div class="buttons-container">
+          <div class="control">
+            <button type="submit" class="button btn-enviar" id="Guarda">
+              Enviar
+            </button>
+          </div>
+          <div class="control is-expanded">
+            <a href="../index.html" class="button btn-inicio is-fullwidth">
+              VOLVER A PAGINA DE INICIO
+            </a>
+          </div>
         </div>
       </div>
-
-
-      <div class="field">
-        <label class="label">Cantidad de productos</label>
-        <div class="control">
-          <input class="input" type="text" placeholder="Ingrese la cantidad">
-        </div>
-      </div>
-
-
-      <div class="field">
-        <label class="label">Marca del producto</label>
-        <div class="control">
-          <input class="input" type="text" placeholder="Ingrese marca">
-        </div>
-      </div>
-
-<div class="control">
-  <button class="button is-primary" id="Guardar">Enviar</button>
-</div>
-<a href="http://127.0.0.1:5500/restaurante/index.html">
-  <div class="column is-12">
-    <button class="button is-dark is-fullwidth">
-      VOLVER A PAGINA DE INICIO
-    </button>
-  </div>
-</a>
-
-</div>
-</body>
-
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/inventario.js"></script>
+  </body>
 </html>

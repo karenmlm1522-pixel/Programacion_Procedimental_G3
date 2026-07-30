@@ -1,151 +1,130 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
-    />
-    <link rel="stylesheet" href="../css/pedidos.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <section class="section">
-      <div class="container">
-        <div class="columns is-centered">
-          <div class="column is-half">
-            <div class="card">
-              <header class="card-header has-background-primary">
-                <p class="card-header-title has-text-white">
-                  <span class="icon mr-2"
-                    ><i class="fas fa-shopping-cart"></i
-                  ></span>
-                  Pedidos
-                </p>
-              </header>
 
-              <div class="card-content">
-                <form>
-                  <div class="field">
-                    <label class="label">Nombre del Usuario</label>
-                    <div class="control has-icons-left">
-                      <input
-                        class="input"
-                        type="text"
-                        placeholder="Escribe tu nombre"/>
-                      <span class="icon is-small is-left">
-                        <i class="fas fa-user"></i>
-                      </span>
-                    </div>
-                  </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" />
+  <link rel="stylesheet" href="../css/pedidos.css" />
+  <title>Document</title>
+</head>
 
-                  <div class="columns">
-                    <div class="column is-eight">
-                      <div class="field">
-                        <label class="label">Producto</label>
-                        <div class="control">
-                          <div class="select is-fullwidth">
-                            <select>
-                              <option>Pitas Carpresas</option>
-                              <option>Batido alegria</option>
-                              <option>covarachía</option>
-                              <option>sombrero vueltiado</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="column">
-                      <div class="field">
-                        <label class="label">Cantidad</label>
-                        <div class="control">
-                          <input
-                            class="input"
-                            type="number"
-                            min="1"
-                            value="1"/>
+<body>
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-half">
+          <div class="card">
+            <header class="card-header has-background-primary">
+              <p class="card-header-title has-text-white">
+                <span class="icon mr-2"><i class="fas fa-shopping-cart"></i></span>
+                FORMULARIO DE PEDIDO
+              </p>
+            </header>
+
+            <div class="card-content">
+              <form>
+                <div class="field">
+                  <label class="label">Nombre del Usuario</label>
+                  <input class="input" type="text" id="nom_usuario" placeholder="Escribe tu nombre" />
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </div>
+
+                <div class="columns">
+                  <div class="column is-eight">
+                    <div class="field">
+                      <label class="label">Producto</label>
+                      <div class="control">
+                        <div class="select is-fullwidth">
+                          <select>
+                            <option>Pitas Carpresas</option>
+                            <option>Batido alegria</option>
+                            <option>covarachía</option>
+                            <option>sombrero vueltiado</option>
+                          </select>
                         </div>
                       </div>
                     </div>
                   </div>
-
-                  <div class="field">
-                    <label class="label">Dirección de Entrega</label>
-                    <div class="control has-icons-left">
-                      <input
-                        class="input"
-                        type="text"
-                        placeholder="Calle, Carrera o Barrio"
-                      />
-                      <span class="icon is-small is-left">
-                        <i class="fas fa-map-marker-alt"></i>
-                      </span>
+                  <div class="column">
+                    <div class="field">
+                      <label class="label">Cantidad</label>
+                      <div class="control">
+                        <input class="input" type="number" id="cantidad" min="1" value="1" />
+                      </div>
                     </div>
                   </div>
+                </div>
 
-                  <div class="field">
-                    <label class="label">Teléfono</label>
-                    <div class="control has-icons-left">
-                      <input
-                        class="input"
-                        type="tel"
-                        placeholder="+57 123 456789"
-                      />
-                      <span class="icon is-small is-left">
-                        <i class="fas fa-phone"></i>
-                      </span>
-                    </div>
+                <div class="field">
+                  <label class="label">Dirección de Entrega</label>
+                  <input class="input" type="text" id="direccion" placeholder="Calle, Carrera o Barrio" />
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </span>
+                </div>
+
+                <div class="field">
+                  <label class="label">Teléfono</label>
+                  <input class="input" type="tel" id="telefono" placeholder="+57 123 456789" />
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-phone"></i>
+                  </span>
+                </div>
+
+                <div class="field">
+                  <label class="label">Método de Pago</label>
+                  <div class="control">
+                    <label class="radio">
+                      <input type="radio" name="pago" id="metodo_pago" checked />
+                      Tarjeta de Crédito
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="pago" />
+                      Transferencia
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="pago" />
+                      Efectivo
+                    </label>
                   </div>
+                </div>
 
-                  <div class="field">
-                    <label class="label">Método de Pago</label>
-                    <div class="control">
-                      <label class="radio">
-                        <input type="radio" name="pago" checked />
-                        Tarjeta de Crédito
-                      </label>
-                      <label class="radio">
-                        <input type="radio" name="pago" />
-                        Transferencia
-                      </label>
-                      <label class="radio">
-                        <input type="radio" name="pago" />
-                        Efectivo
-                      </label>
-                    </div>
+                <div class="field is-grouped mt-5">
+                  <div class="control is-expanded">
+                    <button type="submit" class="button is-primary" id="Guardar">
+                      Confirmar Pedido
+                    </button>
                   </div>
+                  <div class="control">
+                    <button type="reset" class="button is-light">
+                      Cancelar
+                    </button>
+                  </div>
+                </div>
 
-                  <div class="field is-grouped">
-                    <div class="control">
-                      <button class="button is-primary">
-                        Confirmar Pedido
+                <div class="field mt-4">
+                  <div class="control">
+                    <a href="../index.html" class="is-block">
+                      <button type="button" class="button is-dark is-fullwidth">
+                        VOLVER A PÁGINA DE INICIO
                       </button>
-                    </div>
-                    <div class="control">
-                      <button class="button is-light">Cancelar</button>
-                    </div>
-                    
-                     <div class="control">
-          <div class="column is-12">
-            <button class="button is-dark is-fullwidth" id="Guardar">
-            <a href="http://127.0.0.1:5500/restaurante/index.html"> 
-            VOLVER A PAGINA DE INICIO</a>
-            </button>   
-          </div>
-        </a>
-      </div>
-  
-   
-                      </div>
                     </a>
                   </div>
-                </form>
-              </div>
+                </div>
+                </a>
             </div>
+            </form>
           </div>
         </div>
       </div>
-    </section>
-  </body>
+    </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../js/pedidos.js"></script>
+</body>
+
 </html>

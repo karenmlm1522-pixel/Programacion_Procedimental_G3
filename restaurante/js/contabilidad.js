@@ -15,7 +15,8 @@ let concepto = document.getElementById("concepto").value;
 
 });
 return;
-  } else {
+} 
+else {
     if (!/[0-9]/.test(ventas)) {
       console.log("esta categoria debe tener números")
       Swal.fire({
@@ -51,11 +52,14 @@ return;
 });
 return;
     }
-     Swal.fire({
-  title: "Guardado con exito",
-  icon: "success"
-  
-});
+    
+    Swal.fire({
+    position: "top-end",
+    icon: "success",
+    title: "Guardado con éxito",
+    showConfirmButton: false,
+    timer: 1500
+  });
   }
 }
 

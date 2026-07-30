@@ -1,132 +1,132 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"/>
-    <link rel="stylesheet" href="../css/usuarios.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <section class="section">
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" />
+  <link rel="stylesheet" href="../css/usuarios.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="card form-card">
+    <div class="form-header">
+      <h1>USUARIOS</h1>
+    </div>
+
+    <div class="card-content">
+
       <div class="field">
-        <label class="label">Nombre</label>
-        <div class="control">
-          <input class="input" type="text" placeholder="Tu nombre" />
-        </div>
+        <label class="label" for="nombre">Nombre</label>
+        <input class="input" type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        <span class="icon is-small is-left">
+          <i class="fas fa-user"></i>
+        </span>
       </div>
 
       <div class="field">
-        <label class="label">Apellido</label>
-        <div class="control">
-          <input class="input" type="text" placeholder="Tu apellido" />
-        </div>
+        <label class="label" for="apellido">Apellido</label>
+        <input class="input" type="text" id="apellido" name="apellido" placeholder="Tu apellido" required>
+        <span class="icon is-small is-left">
+          <i class="fas fa-user-tag"></i>
+        </span>
       </div>
 
       <div class="field">
-        <label class="label">Tipo de documento</label>
-        <div class="control">
-          <div class="select is-fullwidth">
-            <select>
-              <option>Seleccione tipo</option>
-              <option>Cédula de Ciudadanía</option>
-              <option>Tarjeta de Identidad</option>
-              <option>Tarjeta Extranjera</option>
-              <option>Pasaporte</option>
-            </select>
-          </div>
+        <label class="label" for="tipo_documento">Tipo de documento</label>
+        <div class="select is-fullwidth">
+          <select id="tipo_documento" required>
+            <option value="" disabled selected>Seleccione tipo</option>
+            <option value="CC">Cédula de Ciudadanía</option>
+            <option value="TI">Tarjeta de Identidad</option>
+            <option value="TE">Tarjeta de Extranjería</option>
+            <option value="PAS">Pasaporte</option>
+          </select>
         </div>
+        <span class="icon is-small is-left">
+          <i class="fas fa-id-card"></i>
+        </span>
       </div>
 
       <div class="field">
-        <label class="label">Número de Documento</label>
-        <div class="control">
-          <input
-            class="input"
-            type="text"
-            placeholder="Número de identificación"
-          />
-        </div>
+        <label class="label" for="num_documento">Número de Documento</label>
+        <input class="input" type="text" id="num_documento" name="num_documento" placeholder="Número de identificación" required>
+        <span class="icon is-small is-left">
+          <i class="fas fa-hashtag"></i>
+        </span>
       </div>
 
       <div class="field">
-        <label class="label">Teléfono</label>
-        <div class="control has-icons-left">
-          <input class="input" type="tel" placeholder="Número de contacto" />
-          <span class="icon is-small is-left">
-            <i class="fas fa-phone"></i>
-          </span>
-        </div>
+        <label class="label" for="telefono">Teléfono</label>
+        <input class="input" type="tel" id="telefono" name="telefono" placeholder="Número de contacto" required>
+        <span class="icon is-small is-left">
+          <i class="fas fa-phone"></i>
+        </span>
       </div>
 
       <div class="field">
-        <label class="label">Email</label>
-        <div class="control has-icons-left">
-          <input class="input" type="email" placeholder="ejemplo@correo.com" />
-          <span class="icon is-small is-left">
-            <i class="fas fa-envelope"></i>
-          </span>
-        </div>
+        <label class="label" for="correo">Correo</label>
+        <input class="input" type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+        <span class="icon is-small is-left">
+          <i class="fas fa-envelope"></i>
+        </span>
       </div>
 
       <div class="field">
         <label class="label">Género</label>
-        <div class="control">
+        <div class="control radio-group">
           <label class="radio">
-            <input type="radio" name="genero" /> Masculino
+            <input type="radio" name="genero" value="Masculino" required> Masculino
           </label>
           <label class="radio">
-            <input type="radio" name="genero" /> Femenino
+            <input type="radio" name="genero" value="Femenino"> Femenino
           </label>
           <label class="radio">
-            <input type="radio" name="genero" /> Otro
+            <input type="radio" name="genero" value="Otro"> Otro
           </label>
         </div>
       </div>
 
       <div class="field">
-        <label class="label">Cargo</label>
-        <div class="control">
-          <input class="input" type="text" placeholder="Puesto de trabajo" />
-        </div>
+        <label class="label" for="cargo">Cargo</label>
+        <input class="input" type="text" id="cargo" name="cargo" placeholder="Puesto de trabajo" required>
+        <span class="icon is-small is-left">
+          <i class="fas fa-briefcase"></i>
+        </span>
       </div>
 
       <div class="field">
-        <label class="label">Fecha de nacimiento</label>
-        <div class="control">
-          <input class="input" type="date" />
-        </div>
+        <label class="label" for="fecha_nacimiento">Fecha de nacimiento</label>
+        <input class="input" type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+        <span class="icon is-small is-left">
+          <i class="fas fa-calendar-alt"></i>
+        </span>
       </div>
 
       <div class="field">
-        <label class="label">Contraseña</label>
-        <div class="control has-icons-left">
-          <input class="input" type="password" placeholder="12345678" />
-          <span class="icon is-small is-left">
-            <i class="fas fa-lock"></i>
-          </span>
+        <label class="label" for="contraseña">Contraseña</label>
+        <input class="input" type="password" id="contraseña" name="contraseña" placeholder="********" required>
+        <span class="icon is-small is-left">
+          <i class="fas fa-lock"></i>
+        </span>
+      </div>
+
+      <div class="buttons-container">
+        <div class="control control-registrar">
+          <button type="submit" class="button btn-enviar is-fullwidth" id="Guardar">Registrar</button>
+        </div>
+        <div class="control control-inicio">
+          <a href="../index.html" class="button btn-inicio is-fullwidth">
+            VOLVER A PÁGINA DE INICIO
+          </a>
         </div>
       </div>
 
-      <div class="field is-grouped">
-        <div class="control">
-          <button class="button is-link">Registrar</button>
-        </div>
-        <div class="control">
-          <button class="button is-link is-light">Cancelar</button>
-        </div>
-      </div>
-
-      <div class="control">
-        <a href="http://127.0.0.1:5500/restaurante/index.html">
-          <div class="column is-12">
-            <button class="button is-dark is-fullwidth" id="Guardar">
-              VOLVER A PAGINA DE INICIO
-            </button>
-          </div>
-        </a>
-      </div>
-    </section>
-  </body>
+      </form>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../js/usuarios.js"></script>
+</body>
 </html>

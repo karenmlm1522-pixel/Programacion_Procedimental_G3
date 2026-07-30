@@ -1,76 +1,85 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
     />
     <link rel="stylesheet" href="../css/quienes_somos.css" />
     <title>Document</title>
   </head>
+
   <body>
-    <section class="hero is-medium is-dark">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <p class="title is-1 font-family-secondary">Nosotros</p>
-        </div>
-      </div>
-
+    <section class="section">
       <div class="container">
-        <div class="columns is-vcentered is-desktop">
-          <div class="column is-6">
-            <h4 class="title is-2">Cómo empezamos</h4>
-            <p class="content is-medium has-text-justified">
-              Queríamos crear un lugar donde la cocina tradicional se combinara
-              <br />
-              con ideas nuevas. Lo que empezó como un pequeño proyecto hoy se ha
-              <br />
-              convertido en un punto de encuentro para quienes disfrutan de la
-              buena comida.<br />
+        <div class="columns is-centered">
+          <div class="column is-10-desktop is-12-tablet">
+            <div class="card main-card">
+              <div class="card-header-cafe has-text-centered">
+                <h1 class="title is-2">Nosotros</h1>
+              </div>
 
-              Trabajamos de la mano con con agricultores locales que tienen
-              productos <br />
-              de calidad y frescos para asegurar que solo lo mejor llegue a tu
-              plato. <br />
-              No solo servimos platos, tambien creamos experiencias unicas.
-              <br />
+              <div class="card-content p-5">
+                <div class="columns is-vcentered">
+                  <div class="column is-7">
+                    <h4 class="title is-3 mb-4">Cómo empezamos</h4>
+                    <p
+                      class="content is-medium content-historia has-text-justified"
+                    >
+                      Queríamos crear un lugar donde la cocina tradicional se
+                      combinara con ideas nuevas. Lo que empezó como un pequeño
+                      proyecto hoy se ha convertido en un punto de encuentro
+                      para quienes disfrutan de la buena comida.
+                    </p>
+                    <p
+                      class="content is-medium content-historia has-text-justified"
+                    >
+                      Trabajamos de la mano con agricultores locales que proveen
+                      productos frescos y de calidad para asegurar que solo lo
+                      mejor llegue a tu plato. No solo servimos platos, también
+                      creamos experiencias únicas.
+                    </p>
+                    <p
+                      class="content is-medium content-historia has-text-justified mb-0"
+                    >
+                      Queremos que te sientas como en casa, con una atención
+                      cercana, cálida y profesional.
+                    </p>
+                  </div>
 
-              Queremos que te sientas como en casa, con una atención cercana,
-              <br />
-              cálida y profesional.
-            </p>
-          </div>
-          <div class="column is-5 is-offset-1">
-            <figure class="image is-4by3">
-              <img
-                class="image-cover"
-                src="https://tse4.mm.bing.net/th/id/OIP.MFSStWzs8KKIz7hMPiSa5QHaD_?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-                alt="Nuestro restaurante"
-              />
-            </figure>
+                  <div class="column is-5">
+                    <figure class="image is-4by3">
+                      <img
+                        class="image-cover"
+                        src="https://tse4.mm.bing.net/th/id/OIP.MFSStWzs8KKIz7hMPiSa5QHaD_?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Nuestro restaurante"
+                      />
+                    </figure>
+                  </div>
+                </div>
+
+                <div class="banner-reserva mt-5 mb-5">
+                  <h4 class="title is-4 mb-2">
+                    ¿Listo para vivir la experiencia?
+                  </h4>
+                  <p class="subtitle is-6 mb-0">
+                    ¡Reserva una mesa hoy y déjate sorprender!
+                  </p>
+                </div>
+
+                <div>
+                  <a href="../index.html" class="is-block">
+                    <button class="button btn-cafe-inicio is-fullwidth">
+                      VOLVER A PÁGINA DE INICIO
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="container">
-        <h4 class="title is-3 has-text-white mb-4">
-          ¿Listo para vivir la experiencia?
-        </h4>
-        <p class="subtitle is-5 has-text-light mb-5">
-          Reserva una mesa hoy y déjate sorprender!!
-        </p>
-      </div>
-
-      <div class="control">
-        <a href="http://127.0.0.1:5500/restaurante/index.html">
-          <div class="column is-12">
-            <button class="button is-dark is-fullwidth" id="Guardar">
-              VOLVER A PAGINA DE INICIO
-            </button>
-          </div>
-        </a>
       </div>
     </section>
   </body>

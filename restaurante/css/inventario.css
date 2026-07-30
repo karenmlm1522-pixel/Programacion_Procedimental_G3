@@ -1,73 +1,129 @@
-body {
-    background-color: #fdfaf5;
-    color: #3c2a21;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 2rem;
-}
+ body {
+      background-color: #FAF6F0; 
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
 
-.field {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(111, 78, 55, 0.1);
-    border: 1px solid #e0d7c6;
-}
+    .form-card {
+      background-color: #FFFFFF;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(60, 40, 30, 0.1);
+      border: 1px solid #EFE7DE;
+      padding: 0 !important;
+      width: 100%;
+      max-width: 520px;
+      margin: 0 auto;
+    }
 
-h1 {
-    color: #6f4e37;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-    text-transform: uppercase;
-    border-bottom: 2px solid #f5f5dc;
-    display: inline-block;
-    padding-bottom: 5px;
-}
+    .form-header {
+      background-color: #5D4037;
+      padding: 18px 20px;
+      text-align: center;
+      width: 100%;
+    }
 
-.label {
-    color: #6f4e37 !important;
-    margin-top: 15px;
-}
+    .form-header h1 {
+      color: #FFF8E1 !important;
+      font-weight: 700;
+      letter-spacing: 1px;
+      font-size: 1.35rem;
+      margin: 0;
+      text-transform: uppercase;
+    }
 
-.input {
-    border-color: #d2b48c !important;
-    background-color: #fffaf0;
-    transition: all 0.3s ease;
-}
+    .card-content {
+      padding: 30px 28px !important;
+    }
 
-.input:focus {
-    border-color: #6f4e37 !important;
-    box-shadow: 0 0 0 0.125em rgba(111, 78, 55, 0.25) !important;
-}
+    .label {
+      color: #4A3326 !important;
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 6px;
+    }
 
-.input::placeholder {
-    color: #a68b7c;
-}
+    .input {
+      background-color: #FFFCF9;
+      border-color: #E2D6C9;
+      color: #3D2B1F;
+      border-radius: 8px;
+      box-shadow: none;
+      transition: all 0.2s ease;
+    }
 
-.button.is-primary {
-    background-color: #6f4e37 !important;
-    color: #f5f5dc !important;
-    border: none;
-    font-weight: bold;
-    margin-top: 20px;
-}
+    .input::placeholder {
+      color: #C2B3A3;
+    }
 
-.button.is-primary:hover {
-    background-color: #3c2a21 !important;
-}
+    .input:focus, .input:active {
+      border-color: #8C5B3E !important;
+      box-shadow: 0 0 0 0.125em rgba(140, 91, 62, 0.2) !important;
+    }
 
-.button.is-dark {
-    background-color: #3c2a21 !important;
-    color: #f5f5dc !important;
-    margin-top: 10px;
-}
+    .icon.is-left {
+      color: #9C8275 !important;
+    }
 
-.button.is-dark:hover {
-    background-color: #5a4033 !important;
-}
+    .btn-enviar {
+      background-color: #6E4931 !important;
+      color: #FFFBF5 !important;
+      font-weight: 700;
+      border: none;
+      border-radius: 8px;
+      padding-left: 1.8rem;
+      padding-right: 1.8rem;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+    }
 
-a {
-    text-decoration: none;
-}
+    .btn-enviar:hover {
+      background-color: #593924 !important;
+      color: #FFFFFF !important;
+    }
+
+    .btn-enviar:active {
+      transform: scale(0.98);
+    }
+
+    .btn-inicio {
+      background-color: #3B271E !important;
+      color: #FFFBF5 !important;
+      font-weight: 700;
+      border: none;
+      border-radius: 8px;
+      letter-spacing: 0.5px;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+    }
+
+    .btn-inicio:hover {
+      background-color: #291A13 !important;
+      color: #FFFFFF !important;
+    }
+
+    .btn-inicio:active {
+      transform: scale(0.98);
+    }
+
+    .buttons-container {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-top: 32px;
+    }
+
+    @media (max-width: 480px) {
+      .buttons-container {
+        flex-direction: column;
+      }
+
+      .buttons-container .control, 
+      .buttons-container .btn-enviar {
+        width: 100%;
+      }
+    }

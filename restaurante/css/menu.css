@@ -71,3 +71,17 @@ a {
         padding: 1rem;
     }
 }
+
+.card-image img, 
+.media-left img {
+  width: 120px;       
+  height: 120px;      
+  object-fit: cover; 
+  border-radius: 8px; 
+}
+
+body, html {
+  min-height: 100vh;
+  margin: 0;
+  background-color: #FAF8F5; 
+}

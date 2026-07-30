@@ -1,54 +1,59 @@
 function validarFormulario() {
-let codigo_producto = document.getElementById("codigo_producto").value;
-let nombre_producto = document.getElementById("nombre_producto").value;
-let cantidad_producto = document.getElementById("cantidad_producto").value;
-let marca_producto = document.getElementById("marca_producto").value;
-  if (
-    codigo_producto == "" || nombre_producto == "" || cantidad_producto == "" || marca_producto == ""
-  ) { 
-      console.log("Los campos están vacíos");
-  } else {
-    if (!/[0-9]/ .test(codigo_producto)) {
-      console.log("esta categoria debe tener números")
-      Swal.fire({
-  title: "esta categoria debe tener números",
-  icon: "error"
-});
-return;
-    }
+  let codigo = document.getElementById("codigo").value;
+  let nombre = document.getElementById("nombre").value;
+  let cantidad = document.getElementById("cantidad").value;
+  let marca = document.getElementById("marca").value;
 
-    if (!/[a-zA-Z]/ .test(nombre_producto)) {
-      console.log("esta categoria debe tener letras")
-      Swal.fire({
-  title: "esta categoria debe tener letras",
-  icon: "error"
-});
-return;
-    }
-
-    if (!/[0-9]/.test(cantidad_producto)) {
-      console.log("esta categoria debe tener números")
-      Swal.fire({
-  title: "esta categoria debe tener números",
-  icon: "error"
-});
-return;
-    }
-
-    if (!/[0-9]/.test(marca_producto)) {
-      console.log("esta categoria debe tener letras")
-      Swal.fire({
-  title: "esta categoria debe tener letras",
-  icon: "error"
-});
-return;
-    }
-     Swal.fire({
-  title: "Guardado con exito",
-  icon: "success"
-  
-});
+  if (codigo == "" || nombre == "" || cantidad == "" || marca == "") {
+    console.log("Los campos están vacíos");
+    Swal.fire({
+      title: "Por favor llena todos los campos",
+      icon: "error"
+    });
+    return;
   }
-}
+else{
+    if (!/[0-9]/.test(codigo)) {
+    console.log("esta categoria debe tener números");
+    Swal.fire({
+      title: "Esta categoría debe contener números",
+      icon: "error"
+    });
+    return;
+  }
 
+      if (!/^[a-zA-]+$/.test(nombre)) {
+    Swal.fire({
+      title: "El nombre debe contener únicamente letras",
+      icon: "error"
+    });
+    return;
+  } 
+
+  if (!/[0-9]/.test(cantidad)) {
+    console.log("esta categoria debe tener números");
+    Swal.fire({
+      title: "Esta categoría debe contener números",
+      icon: "error"
+    });
+    return;
+  }
+
+    if (!/^[a-zA-]+$/.test(marca)) {
+    Swal.fire({
+      title: "La marca debe contener únicamente letras",
+      icon: "error"
+    });
+    return;
+  }
+
+  Swal.fire({
+    position: "top-end",
+    icon: "success",
+    title: "Producto guardado con éxito",
+    showConfirmButton: false,
+    timer: 1500
+  });
+}
+}
 document.getElementById("Guardar").onclick = validarFormulario;
